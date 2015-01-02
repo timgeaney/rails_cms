@@ -4,7 +4,7 @@ class CreatePages < ActiveRecord::Migration
       t.string :title
       t.integer :section_id
       t.text :body
-      t.integer :order
+      t.integer :order 
       t.boolean :is_published
       t.boolean :menu_display
 
