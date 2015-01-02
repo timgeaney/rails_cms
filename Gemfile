@@ -32,6 +32,18 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin.git'
+
+gem 'devise'
+
+gem 'active_admin_editor'
+
+gem 'font-awesome-rails'
+
+gem 'bootstrap-sass', '~> 3.3.1'
+
+gem "autoprefixer-rails", '4.0.2.2'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
