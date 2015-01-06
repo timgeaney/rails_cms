@@ -1,4 +1,4 @@
-ActiveAdmin.register Block do
+ActiveAdmin.register Block, :as => 'BlockLink' do
 
 permit_params :title, :show_title, :body, :position, :display, :class_suffix, :order, :is_published
   # See permitted parameters documentation:

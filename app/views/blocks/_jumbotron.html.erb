@@ -1,0 +1,42 @@
+
+
+<% if @jumbotron.exists? %>
+	<% @jumbotron.each do |jumbotron| %>
+		<% if params[:controller] == 'home' %>
+			<% if jumbotron.display == 'homepage' || jumbotron.display == 'all' %>
+					<div class="jumbotron">
+					  <div class="container">
+					    <h1><%= jumbotron.title %></h1>
+					    		<%= raw jumbotron.body %>
+					  </div>
+					</div>
+			<% end %>
+		<% else %>
+			<% if jumbotron.display == 'nohome' || jumbotron.display == 'all' %>
+					<div class="jumbotron">
+					  <div class="container">
+					    <h1><%= jumbotron.title %></h1>
+					    		<%= raw jumbotron.body %>
+					  </div>
+					</div>
+			<% end %>
+		<% end %>
+	<% end %>
+<% end %>
+
+<!-- 
+
+<% if @jumbotron.exists? %>
+		<% @jumbotron.each do |jumbotron| %> 	
+			<div class="jumbotron">
+					  <div class="container">
+					    <h1><%= jumbotron.title %></h1>
+					    		<%= raw jumbotron.body %>
+					  </div>
+					</div>
+		<% end %>
+		<% else %>
+		<h1>Jumbotron does not exist</h1>		
+<% end %>
+
+-->
